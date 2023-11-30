@@ -1,0 +1,240 @@
+/* Reset the default styles for body and set the background color */
+body {
+    font-family: Arial, sans-serif; /* Set the font for the entire page to Arial or any sans-serif font. */
+    background-color: #f0f0f0; /* Set the background color of the page to a light gray. */
+    margin: 0; /* Remove default margins to ensure a consistent layout. */
+    padding: 0; /* Remove default padding to ensure a consistent layout. */
+}
+
+/* Style the header section with the search and banner */
+header {
+    background-image: url('/images/weather_banner_page_531889697_612x612.jpg'); /* Set the background image for the header. */
+    background-size: cover; /* Scale the background image to cover the entire header. */
+    background-position: center; /* Center the background image horizontally and vertically. */
+    height: 400px; /* Set the height of the header to 400 pixels. */
+    text-align: center; /* Center the content horizontally within the header. */
+    display: flex; /* Use a flex layout to control vertical alignment. */
+    flex-direction: column; /* Stack the elements vertically within the header. */
+    justify-content: center; /* Vertically center the content (title and search) within the header. */
+    align-items: center; /* Horizontally center the content within the header. */
+    position: relative; /* Added position relative for child absolute positioning */
+}
+
+/* Style the top black banner with "Welcome" */
+.black-banner {
+    background-color: #999191; /* Set the background color of the top banner to black. */
+    color: #fff; /* Set the text color to white for good contrast. */
+    padding: 5px 0; /* Reduce the padding above and below the banner text for a smaller size. */
+    width: 100%; /* Make the banner full width of the header. */
+    text-align: center; /* Center the text within the banner. */
+    position: absolute; /* Position the banner absolutely to the header. */
+    top: 0; /* Align the banner to the top of the header. */
+    font-size: 10px; /* Adjust the font size to make the text smaller. */
+}
+
+/* Style the search section */
+.search-section {
+    background-color: rgba(0, 0, 0, 0.6); /* Add a semi-transparent black background to the search section. */
+    color: #fff; /* Set the text color within the search section to white. */
+    padding: 10px; /* Add padding to the search section for spacing. */
+    width: 100%; /* Make the search section full width of the header. */
+    position: relative; /* Position the search section within the header. */
+    display: flex; /* Use a flex layout to align content vertically. */
+    flex-direction: column; /* Stack the elements vertically within the search section. */
+    justify-content: center; /* Vertically center the elements within the search section. */
+    align-items: center; /* Horizontally center the elements within the search section. */
+    text-align: center; /* Center the text within the search section. */
+}
+
+/* Style the search container */
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px; /* Add margin at the top of the search container for separation. */
+    width: 80%; /* Adjust the width to make the search container wider (you can adjust the percentage as needed). */
+}
+
+#city-input {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    flex: 1; /* Use the flex property to make the input field expand and fill the available width. */
+    text-align: center;
+}
+
+#search-button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Navigation menu */
+#nav-buttons {
+    background-color: #333; /* Set the background color of the navigation menu to dark gray. */
+    color: #fff; /* Make the text color white for good visibility against the background. */
+    text-align: center; /* Center the text in the navigation menu horizontally. */
+    padding: 10px; /* Add padding to the navigation menu for spacing. */
+}
+
+#nav-buttons a {
+    text-decoration: none; /* Remove the underline from links. */
+    color: #fff; /* Make the text color of the links white. */
+    background-color: #333; /* Set the background color of the navigation buttons to dark gray. */
+    padding: 10px 60px; /* Add padding to the navigation buttons for spacing. */
+    border: none; /* Remove the button border. */
+    border-radius: 4px; /* Add rounded corners to the buttons. */
+    cursor: pointer; /* Change the cursor to a pointer on hover to indicate interactivity. */
+}
+
+/* About section content container */
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80%; /* Set a maximum width for the container to keep it within the margin of the page. */
+    margin: 0 auto; /* Center the container horizontally. */
+}
+
+/* About section text */
+.about-text {
+    flex: 1;
+    padding: 10px;
+}
+
+/* About section images */
+.about-images {
+    flex: 1;
+    text-align: center; /* Center the image horizontally within its container. */
+    padding: 50px;
+}
+
+/* Adjust the maximum image width for symmetry */
+.about-images img {
+    max-width: 100%; /* Set the maximum image width to 100% to ensure symmetry with the text. */
+    height: auto;
+}
+
+/* Style the fixed-width image */
+.fixed-width-image {
+    width: 400px; /* Set a fixed width for the image, adjust as needed. */
+}
+
+/* Footer section */
+footer {
+    text-align: center; /* Center the text in the footer horizontally. */
+    padding: 10px; /* Add padding to the footer for spacing. */
+    background-color: #333; /* Set the background color of the footer to dark gray. */
+    color: #fff; /* Make the text color of the footer white for visibility. */
+}
+
+/* Footer content container */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Footer links */
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-links a {
+    text-decoration: none; /* Remove the underline from links. */
+    color: #fff; /* Make the text color of the links white. */
+}
+
+/* Social media links */
+.social-media {
+    display: flex;
+    gap: 20px;
+}
+
+.social-link {
+    text-decoration: none; /* Remove the underline from links. */
+    color: #fff; /* Make the text color of the links white. */
+}
+
+/* Style for the section content container */
+.section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80%; /* Set a maximum width for the container to keep it within the margin of the page. */
+    margin: 0 auto; /* Center the container horizontally. */
+}
+
+/* Style for the section text */
+.section-text {
+    flex: 1;
+    padding: 10px;
+    align-content: end;
+}
+
+/* Style for the section images */
+.section-images {
+    flex: 1;
+    text-align: center; /* Center the image horizontally within its container. */
+    padding: 20px;
+    margin-right: 20px; /* Add margin to push the image to the left. */
+}
+
+/* Adjust the maximum image width for symmetry */
+.section-images img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style for the Contact Us image */
+.section-images img {
+    float: left; /* Use the float property to move the image to the left. */
+    margin-right: 20px; /* Add margin to provide spacing between the image and the form. */
+}
+
+/* Style for the form fields and labels */
+.form-group {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+/* Style the submit button */
+button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Add styles for the weather information */
+#weather-info {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

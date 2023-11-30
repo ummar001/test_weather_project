@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <header>
+        <!-- Top black banner with a "Welcome" message -->
+        <section id="welcome-banner" class="black-banner">
+            <h1>Welcome</h1>
+        </section>
+
+        <!-- Search section with a background image -->
+        <section id="search" class="search-section">
+            <h1>Weather Dashboard</h1>
+            <div class="search-container">
+                <input type="text" id="city-input" placeholder="Enter city name">
+                <button id="search-button">Search</button>
+            </div>
+        </section>
+    </header>
+
+    <nav>
+        <!-- Navigation buttons arranged horizontally -->
+        <div id="nav-buttons">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#uk-regions">UK Regions</a>
+            <a href="#climate-change">Climate Change</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Weather Warning section -->
+        <section id="weather-warning" class="section">
+            <div class="section-content">
+                <div class="section-text">
+                    <h2>Weather Warning</h2>
+                    <p>Stay informed about weather warnings and alerts for your area.</p>
+                    <!-- I will add JavaScript for fetching and displaying weather data here. -->
+                </div>
+
+                <div id="weather-info">
+                    <!-- Weather data will be displayed here -->
+                  </div>
+                  
+                <div class="section-images">
+                    <img src="/images/weather warning.jpg" alt="Weather Warning Image">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us section -->
+        <section id="about" class="section">
+            <div class="section-content">
+                <div class="section-images">
+                    <img src="/images/about_us_1356063_1280.jpg" alt="About Us Image">
+                </div>
+                <div class="section-text">
+                    <h2>About Us</h2>
+                    <p>Welcome to Weather Dashboard, your go-to source for weather information. Our project aims to provide you with up-to-date weather data, forecasts, and insights for locations around the world.</p>
+                    <p>This project is an ongoing effort to make weather-related information accessible and user-friendly. We are passionate about keeping you informed about weather conditions and helping you plan your day.</p>
+                    <p>Join us on this journey as we continue to enhance and expand our services to better serve your weather-related needs.</p>
+                    <a href="about.html">Learn more about us</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- UK Regions section -->
+        <section id="uk-regions" class="section">
+            <div class="section-content">
+                <div class="section-text">
+                    <h2>UK Regions</h2>
+                    <p>Explore weather information for different regions in the UK.</p>
+                    <a href="uk-regions.html">View regions</a>
+                </div>
+                <div class="section-images">
+                    <img src="/images/uk_regions_image_12.jpg" alt="UK Region Image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Climate Change section -->
+        <section id="climate-change" class="section">
+            <div class="section-content">
+                <div class="section-images">
+                    <img src="/images/climate _change.jpg" alt="Climate Change Image">
+                </div>
+                <div class="section-text">
+                    <h2>Climate Change</h2>
+                    <p>Learn about the impact of climate change on weather patterns.</p>
+                    <a href="climate-change.html">Discover more</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog section -->
+        <section id="blog" class="section">
+            <div class="section-content">
+                <div class="section-text">
+                    <h2>Blog</h2>
+                    <p>Read the latest articles and updates about weather and climate.</p>
+                    <a href="blog.html">Read our blog</a>
+                </div>
+                <div class="section-images">
+                    <img src="/images/blogs.jpg" alt="Blogs Image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact section i used a form -->
+        <section id="contact" class="section">
+            <div class="section-content">
+                <div class="section-images">
+                    <img src="/images/contact_us.jpg" alt="Contact Us Image">
+                </div>
+                <div class="section-form">
+                    <h3>Contact Us</h3>
+                    <form action="submit_form.php" method="post">
+                        <div class="form-group">
+                            <label for="name">Your Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message:</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+       <!-- i will update the links and pages too -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="about.html">About Us</a>
+                <a href="legal.html">Legal</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+            </div>
+            <div class="social-media">
+                <a href="#" class="social-link">Facebook</a>
+                <a href="#" class="social-link">Twitter</a>
+                <a href="#" class="social-link">Instagram</a>
+            </div>
+        </div>
+         2023 Mohammed Ummar
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>
